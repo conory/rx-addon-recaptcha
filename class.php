@@ -139,11 +139,11 @@ class recaptcha
 					self::$target_acts[] = 'procMemberResendAuthMail';
 				}
 			}
-			if (self::$addon_info->use_document === 'Y' || self::$addon_info->use_document === 'non-login' && !$is_logged)
+			if (self::$addon_info->use_document === 'Y' || self::$addon_info->use_document === 'non-login_only' && !$is_logged)
 			{
 				self::$target_acts[] = 'procBoardInsertDocument';
 			}
-			if (self::$addon_info->use_comment === 'Y' || self::$addon_info->use_comment === 'non-login' && !$is_logged)
+			if (self::$addon_info->use_comment === 'Y' || self::$addon_info->use_comment === 'non-login_only' && !$is_logged)
 			{
 				self::$target_acts[] = 'procBoardInsertComment';
 			}

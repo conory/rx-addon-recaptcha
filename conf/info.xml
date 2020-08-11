@@ -81,9 +81,9 @@
 			<var name="use_document" type="select">
 				<title xml:lang="ko">글쓰기</title>
 				<title xml:lang="en">New Document</title>
-				<options value="non-login">
+				<options value="non-login_only">
 					<title xml:lang="ko">로그인하지 않은 사용자에게만 적용함</title>
-					<title xml:lang="en">On (Non-login users Only)</title>
+					<title xml:lang="en">On (Non-login Users Only)</title>
 				</options>
 				<options value="Y">
 					<title xml:lang="ko">적용함</title>
@@ -97,9 +97,9 @@
 			<var name="use_comment" type="select">
 				<title xml:lang="ko">댓글쓰기</title>
 				<title xml:lang="en">New Comment</title>
-				<options value="non-login">
+				<options value="non-login_only">
 					<title xml:lang="ko">로그인하지 않은 사용자에게만 적용함</title>
-					<title xml:lang="en">On (Non-login users Only)</title>
+					<title xml:lang="en">On (Non-login Users Only)</title>
 				</options>
 				<options value="Y">
 					<title xml:lang="ko">적용함</title>
@@ -184,6 +184,10 @@
 				<options value="N">
 					<title xml:lang="ko">아니오</title>
 					<title xml:lang="en">No</title>
+				</options>
+				<options value="login_only">
+					<title xml:lang="ko">로그인한 사용자만 다시 확인하지 않음</title>
+					<title xml:lang="en">Yes (Login Users Only)</title>
 				</options>
 				<options value="Y">
 					<title xml:lang="ko">예</title>

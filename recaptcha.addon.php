@@ -11,7 +11,8 @@ if (!$addon_info->site_key || !$addon_info->secret_key || Rhymix\Framework\Sessi
 {
 	return;
 }
-if ($addon_info->first_time_only === 'Y' && !empty($_SESSION['recaptcha_authenticated']))
+$is_session = !empty($_SESSION['recaptcha_authenticated']);
+if ($is_session && ($addon_info->first_time_only === 'Y' || $addon_info->first_time_only === 'login_only' && Context::get('is_logged')))
 {
 	return;
 }
