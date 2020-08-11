@@ -19,7 +19,7 @@
 	background-color: #fff;
 	color: #222;
 	font-size: 14px;
-	transform: translateX(-50%);
+	transform: translateX(-50%) translateY(50%);
 	z-index: 999999999;
 }
 .recaptcha_modal_title{
