@@ -12,14 +12,14 @@
 .recaptcha_modal_window {
 	position: fixed;
 	left: 50%;
-	bottom: 50%;
+	top: 50%;
 	width: 360px;
 	padding: 20px;
 	box-sizing: border-box;
 	background-color: #fff;
 	color: #222;
 	font-size: 14px;
-	transform: translateX(-50%) translateY(50%);
+	transform: translate(-50%, -50%);
 	z-index: 999999999;
 }
 .recaptcha_modal_title{
