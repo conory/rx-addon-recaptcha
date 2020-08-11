@@ -14,7 +14,7 @@ class recaptcha
 		$addon_info->size = $addon_info->size ?? 'normal';
 		$addon_info->threshold = strlen($addon_info->threshold) ? (float)$addon_info->threshold : 0.5;
 		$addon_info->extra_acts = array_map('trim', preg_split('/\R/', $addon_info->extra_acts, -1, PREG_SPLIT_NO_EMPTY) ?: []);
-		$addon_info->use_captcha_var = $addon_info->use_captcha_var ?? 'Y';
+		$addon_info->use_captcha_var = $addon_info->use_captcha_var ?? 'N';
 		self::$addon_info = $addon_info;
 		
 		if (self::$addon_info->key_type === 'v2.invisible')

@@ -153,13 +153,13 @@
 				<title xml:lang="en">Use Captcha Variable</title>
 				<description xml:lang="ko">레이아웃 및 스킨에 있는 {$captcha} 변수의 위치에 reCAPTCHA v2 (Checkbox)를 삽입합니다.</description>
 				<description xml:lang="en">It will insert reCAPTCHA v2 (Checkbox) at the position of {$captcha} variable that's in layouts and skins</description>
-				<options value="Y">
-					<title xml:lang="ko">예</title>
-					<title xml:lang="en">Yes</title>
-				</options>
 				<options value="N">
 					<title xml:lang="ko">아니오</title>
 					<title xml:lang="en">No</title>
+				</options>
+				<options value="Y">
+					<title xml:lang="ko">예</title>
+					<title xml:lang="en">Yes</title>
 				</options>
 			</var>
 		</group>
