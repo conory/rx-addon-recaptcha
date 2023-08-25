@@ -52,11 +52,14 @@ $(function() {
 	};
 	
 	$('form').submit(function(event) {
-		var input_act = $(this).find('input[name="act"]');
-		if (!input_act.size() || !input_act.val() || recaptcha_config['target_acts'].indexOf(input_act.val()) === -1) {
+		if ($(this).find('input[name="g-recaptcha-response"]').size()) {
 			return;
 		}
-		if ($(this).find('input[name="g-recaptcha-response"]').size() || $(this).hasClass('rx_ajax')) {
+		if ($(this).hasClass('rx_ajax') && !$(this).find('input[type=file][name!=Filedata]').size()) {
+			return;
+		}
+		var input_act = $(this).find('input[name="act"]');
+		if (!input_act.size() || !input_act.val() || recaptcha_config['target_acts'].indexOf(input_act.val()) === -1) {
 			return;
 		}
 		event.preventDefault();
