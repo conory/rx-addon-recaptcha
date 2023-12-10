@@ -6,7 +6,7 @@
     <description xml:lang="en">Prevent automated bot attacks with Google's reCAPTCHA service.</description>
     <version>2.0</version>
     <date>2020-07-28</date>
-    <author email_address="conorycom@gmail.com" link="https://xe.conory.com">
+    <author email_address="conory@conory.com" link="https://conory.com">
         <name xml:lang="ko">conory</name>
         <name xml:lang="en">conory</name>
     </author>
